@@ -7,9 +7,11 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: acrain/ga-docker-container-action@v2.7
+      uses: acrain/ga-docker-container-action@v2.8
       with:
-        who-to-greet: 'Someone Else'
+        sonar-project-key: 'the keyy'
+        sonar-host-url: 'other host url.com'
+        sonar-login: 'mytooken'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time returned by 'ga-docker-container-action' was ${{ steps.hello.outputs.time }}"

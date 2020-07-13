@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: acrain/ga-docker-container-action@v2.8
+      uses: acrain/ga-docker-container-action@v2.10
       with:
         sonar-project-key: 'the keyy'
         sonar-host-url: 'other host url.com'
